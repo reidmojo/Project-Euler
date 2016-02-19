@@ -22,4 +22,27 @@ We can see that 28 is the first triangle number to have over five divisors.
 What is the value of the first triangle number to have over five hundred divisors?
 
 """
+# part 1: generate triangle numbers
 
+z = []
+k = 0
+j = 1
+while len(z) < 500:    
+        z = []
+        x = (sum(range(0,j)))
+        for i in range(1,int(round(x**0.5,0))):
+            if x%i == 0:
+                z.append(i)
+                z.append(x/i)
+        j+=1
+        if len(z) > k:
+            k = len(z)
+            print k, x
+
+
+
+# part 2: count number of divisors
+#x = []
+#i = 1
+#while len[x] < 500:
+#    for i in range(1,)
