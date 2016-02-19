@@ -113,8 +113,14 @@ for i in range(0,17):
         if prod(y[0+i:4+i,0+j]) > max:
             max = prod(y[0+i:4+i,0+j])
 
-#diagonal upper left -> bottom right
-for i in range(0,17):
-    for j in range(0,17):
-        x.append([i+k,j+k])
+
+#diagonal time!
+#create a new array of the diagonals
+x = []
+
+
+upper left -> bottom right
+#for i in range(0,17):
+#    for j in range(0,17):
+#        x.append([i+k,j+k])
             
