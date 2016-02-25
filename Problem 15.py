@@ -66,19 +66,30 @@ How many such routes are there through a 20×20 grid?
 
 list = []
 
-#i = int('1111111111111111111111111111111111111111',2) # largest 40-digit binary, checked with len()
+i = 0b11111111111111111111111111111111111111 # largest 40-digit binary, checked with len()
 ##jbad = int('1000000000000000000000000000000000000000',2) # smallest 40-digit binary, checked with len() 
 ##    #optimization problem: i only need the smallest 40 digit binary where count(1)==count(0)
-#j = int('1000000000000000000001111111111111111111',2)
+j = 0b10000000000000000000011111111111111111
+
+from datetime import datetime as dt
+#
+#i = 0b1111111111111111111111111111
+#j = 0b1000000000000001111111111111
 ##
-i = 0b111111111111111111111111111111
-j = 0b100000000000000000000000000000
+#i = 0b111111111111
+#j = 0b100000000000
 
+#z = "{0:b}".format(i)
+#q = len(z)/2
 
-list = []
-
+q = 0
+counter = 0
 for n in range(j,i):
-    if bin(n).count('1') == 15:
-        list.append(bin(n))
-len(list)
+#    if bin(n).count('1') == q:
+#        list.append(bin(n))
+#        counter = counter+1
+#        if counter%1000000 == 0:
+#            print counter, list[-1], dt.now().time()
+        q = n
+#print len(list)*2, q
         
