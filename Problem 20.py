@@ -13,3 +13,19 @@ Find the sum of the digits in the number 100!
 
 """
 
+def fac(n):
+    p = []
+    for i in range(1,n):
+        p.append(i)
+    z = 1
+    for i in p:
+        z *= i
+    return z
+
+def digsum(n):
+    
+    l = []
+    for i in str(n):
+        l.append(int(i))
+    
+    return sum(l)
