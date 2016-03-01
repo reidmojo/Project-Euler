@@ -21,4 +21,4 @@ for i in range(2,check+1):
     if len(tmp_list) == 1:
         prime_list.append(i)
 
-print prime_list[-1]
+nprint prime_list[-1]
